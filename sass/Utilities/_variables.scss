@@ -1,0 +1,47 @@
+//Font-Family
+$primary-font: 'Inter', sans-serif;
+
+//Colors
+$primary-color: #06c167;
+$heading-color: #1d1d1f;
+$paragraph-color: rgba(29, 29, 31, 0.75);
+
+//Font Size
+$heading01: 4.6875rem; //75px
+$heading02: 3.75rem; //60px
+$heading03: 2rem; //32px
+$heading04: 1.5rem; //24px
+$heading05: 1.25rem; //20px
+$heading06: 1.125rem; //18px
+$paragraph-text: 1rem; //16px
+
+//Container
+.container {
+  max-width: 73.125rem;
+  margin: auto;
+}
+
+//Display Flex
+%displayFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//Active Color
+.active {
+  color: $primary-color !important;
+}
+
+//hr
+.hr {
+  border-width: 0.0938rem;
+  border-color: #707070;
+  opacity: 0.15;
+
+  @media all and (max-width: 769px) {
+    & {
+      margin: 0 1.25rem;
+    }
+  }
+}

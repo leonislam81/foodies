@@ -1,0 +1,21 @@
+//Heading
+@mixin heading($fontSize, $fontWeight) {
+  font-family: $primary-font;
+  font-size: $fontSize;
+  font-style: normal;
+  font-weight: $fontWeight;
+  line-height: normal;
+
+  color: $heading-color;
+}
+
+//Text
+@mixin text($fontSize, $fontWeight, $color) {
+  font-family: $primary-font;
+  font-size: $fontSize;
+  font-style: normal;
+  font-weight: $fontWeight;
+  line-height: normal;
+
+  color: $color;
+}

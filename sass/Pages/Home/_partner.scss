@@ -1,0 +1,32 @@
+.partner-logo {
+  padding: 2.75rem 0 6.25rem 0;
+  background-color: #fff;
+  z-index: -1;
+  margin-top: -7.5rem;
+
+  .partner-logo-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.625rem;
+  }
+  .partner-logo-list img {
+    max-width: 9.375rem;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+  }
+
+  //Media Query
+  @media all and (max-width: 769px) {
+    & {
+      padding: 7.5rem 1.25rem 4rem 1.25rem;
+      margin-top: -3.75rem;
+    }
+    .partner-logo-list {
+      gap: 1.625rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

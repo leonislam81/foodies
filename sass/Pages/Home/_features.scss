@@ -1,0 +1,45 @@
+.features {
+  .features-wrap {
+    padding: 3.625rem 0;
+    border-top: 1.5px solid oklab(0.55 0 0 / 0.15);
+    border-bottom: 1.5px solid oklab(0.55 0 0 / 0.15);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .features-box {
+    @extend %displayFlex;
+    gap: 1.375rem;
+  }
+  .features-box__img {
+    max-width: 70px;
+  }
+  .features-box-info__heading {
+    @include heading($heading06, 400);
+    margin-bottom: 0.4375rem;
+  }
+  .features-box-info__text {
+    @include text(0.875rem, 500, $heading-color);
+  }
+
+  //Media Query
+  @media all and (max-width: 769px) {
+    & {
+      padding: 0 1.25rem;
+    }
+    .features-wrap {
+      row-gap: 6.5rem;
+      column-gap: 0;
+    }
+    .features-box {
+      flex-direction: column;
+      min-width: 118px;
+      flex: 1;
+    }
+    .features-box-info__heading,
+    .features-box-info__text {
+      text-align: center;
+    }
+  }
+}

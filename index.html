@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodies</title>
+  <link rel="shortcut icon" href="./assets/Fav Icon.png" type="image/x-icon">
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/2c369df206.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <!-- Header Part -->
+  <header class="header">
+    <div class="container">
+      <div class="header-wrap">
+        <div class="header-logo">
+          <a href="#">
+            <h2 class="logo__img">Foodies</h2>
+          </a>
+        </div>
+        <!-- Desktop Version -->
+        <nav class="header-nav--desktop">
+          <ul class="nav-list--desktop">
+            <li class="nav-list__items--desktop"><a class="active" href="#">Home</a></li>
+            <li class="nav-list__items--desktop"><a href="#">About Us</a></li>
+            <li class="nav-list__items--desktop"><a href="#">Service Us</a></li>
+            <li class="nav-list__items--desktop"><a href="#">Our Company</a></li>
+            <li class="nav-list__items--desktop">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <label for="checkbox">
+                <span class="clickable-dropdown">Pages<i class="fa-solid fa-chevron-down"></i></span>
+              </label>
+              <ul class="nav-dropdown-menu">
+                <li class="nav-dropdown-menu__items"><a href="#">Contact Us</a></li>
+                <li class="nav-dropdown-menu__items"><a href="#">Demo 1</a></li>
+                <li class="nav-dropdown-menu__items"><a href="#">Demo 2</a></li>
+                <li class="nav-dropdown-menu__items"><a href="#">Demo 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- Mobile Version -->
+        <nav class="header-nav--mobile">
+          <input type="checkbox" name="checkbox-menu" id="checkbox-menu">
+          <ul class="nav-list--mobile">
+            <li class="nav-list__items--mobile"><a class="active" href="#">Home</a></li>
+            <li class="nav-list__items--mobile"><a href="#">About Us</a></li>
+            <li class="nav-list__items--mobile"><a href="#">Service Us</a></li>
+            <li class="nav-list__items--mobile"><a href="#">Our Company</a></li>
+            <li class="nav-list__items--mobile"><a href="#">Pages</a></li>
+          </ul>
+          <label for="checkbox-menu"><i class="fa-solid fa-bars"></i></label>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrap">
+        <div class="hero-info">
+          <h1 class="hero-info__heading">We're Serious For Food.</h1>
+          <p class="hero-info__description">We strive to provide a space where guests can connect with themselves and
+            explore their full potential, offering a safe
+            place.</p>
+          <a href="#" class="btn hero-info__button">Get Started <i class="fa-solid fa-right-long"></i></a>
+        </div>
+        <div class="hero-img">
+          <div class="rating-absolute">
+            <p class="rating-text">5.0 Ratings</p>
+            <div class="rating-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="product-absolute">
+            <img src="./assets/rounded image.png" alt="Image" class="product-absolute__img">
+            <p class="product-absolute__text">Good Quality Product</p>
+          </div>
+          <img class="hero-main-img" src="./assets/Hero Image.png" alt="Hero Image">
+          <img src="./assets/Polcadot.svg" alt="Hero Shape" class="hero-shape">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner's Logo Section -->
+  <section class="partner-logo">
+    <div class="container">
+      <div class="partner-logo-list">
+        <a href="#"><img src="./assets/logo-1.png" alt="Partners Logo"></a>
+        <a href="#"><img src="./assets/logo-2.png" alt="Partners Logo"></a>
+        <a href="#"><img src="./assets/logo-3.png" alt="Partners Logo"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="features-wrap">
+        <div class="features-box">
+          <img src="./assets/Icon-1.svg" alt="Icon" class="features-box__img">
+          <div class="features-box-info">
+            <h4 class="features-box-info__heading">Free Shipping</h4>
+            <p class="features-box-info__text">Orders over $140</p>
+          </div>
+        </div>
+        <div class="features-box">
+          <img src="./assets/Icon-2.svg" alt="Icon" class="features-box__img">
+          <div class="features-box-info">
+            <h4 class="features-box-info__heading">Quick Payment</h4>
+            <p class="features-box-info__text">100% secure payment</p>
+          </div>
+        </div>
+        <div class="features-box">
+          <img src="./assets/Icon-3.svg" alt="Icon" class="features-box__img">
+          <div class="features-box-info">
+            <h4 class="features-box-info__heading">Special Promo</h4>
+            <p class="features-box-info__text">Get special promo</p>
+          </div>
+        </div>
+        <div class="features-box">
+          <img src="./assets/Icon-4.svg" alt="Icon" class="features-box__img">
+          <div class="features-box-info">
+            <h4 class="features-box-info__heading">24/7 Support</h4>
+            <p class="features-box-info__text">Ready support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Benefit Section -->
+  <section class="benefit">
+    <div class="container">
+      <div class="benefit-wrap">
+        <div class="benefit-img-box">
+          <img src="./assets/The More Healthy Food The Better.jpg" alt="The More Healthy Food The Better">
+        </div>
+        <div class="benefit-info">
+          <img src="./assets/Polcadot.svg" alt="shape" class="benefit-info__shape">
+          <h6 class="benefit-info__sub-heading">Our Benefit</h6>
+          <h2 class="benefit-info__heading">The More Healthy Food The Better</h2>
+          <ul class="benefit-info-list">
+            <li class="benefit-info-list__item"><i class="fa-solid fa-check"></i> Be Alive With Veggie Food.</li>
+            <li class="benefit-info-list__item"><i class="fa-solid fa-check"></i> It's The Place To Be.</li>
+            <li class="benefit-info-list__item"><i class="fa-solid fa-check"></i> Nonstop Veggie Food.</li>
+            <li class="benefit-info-list__item"><i class="fa-solid fa-check"></i> The Best Silk Dish In Town.</li>
+            <li class="benefit-info-list__item"><i class="fa-solid fa-check"></i> Truffles, Egg & Pumpkin Spice.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Stars Section -->
+  <section class="stars">
+    <div class="container">
+      <div class="starts-wrap">
+        <div class="stars-info">
+          <img src="./assets/Polcadot.svg" alt="shape" class="stars-info__shape">
+          <h6 class="stars-info__sub-heading">Our Stars</h6>
+          <h2 class="stars-info__heading">Veggie Food Goes On And Always On</h2>
+
+          <div class="stars-count-wrap">
+            <div class="stars-count">
+              <h5 class="stars-count__number">1,500</h5>
+              <p class="stars-count__text">Sold Product</p>
+            </div>
+            <div class="stars-count">
+              <h5 class="stars-count__number">500</h5>
+              <p class="stars-count__text">Possitive Feedback</p>
+            </div>
+            <div class="stars-count">
+              <h5 class="stars-count__number">400</h5>
+              <p class="stars-count__text">Official Store</p>
+            </div>
+          </div>
+          <a href="#" class="btn stars-info__button">Get Special Promo <i class="fa-solid fa-right-long"></i></a>
+        </div>
+        <div class="stars-img-box">
+          <img src="./assets/Veggie Food Goes On And Always On.jpg" alt="Veggie Food Goes On And Always On">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Variety Of Foods Section -->
+  <section class="foods">
+    <div class="container">
+      <div class="foods-wrap">
+        <h6 class="foods__sub-heading">Our Features</h6>
+        <h2 class="foods__heading">Variety Of Foods</h2>
+        <div class="foods-gallery">
+          <div class="foods-gallery-items">
+            <img src="./assets/Veggies Are Forever.jpg" alt="Veggies Are Forever">
+          </div>
+          <div class="foods-gallery-items foods-box">
+            <h4 class="foods-gallery-items__heading">Veggies Are Forever</h4>
+            <p class="foods-gallery-items__description">We offer the following services</p>
+            <a href="#" class="foods-gallery-items__button">Discover Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+          <div class="foods-gallery-items">
+            <img src="./assets/Good For Your Skin.jpg" alt="Good For Your Skin">
+          </div>
+          <div class="foods-gallery-items foods-box">
+            <h4 class="foods-gallery-items__heading">Good For Your Skin</h4>
+            <p class="foods-gallery-items__description">We offer the following services</p>
+            <a href="#" class="foods-gallery-items__button">Discover Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+        </div>
+        <div class="foods-gallery foods-gallery--reverse">
+          <div class="foods-gallery-items foods-box">
+            <h4 class="foods-gallery-items__heading">Veggie Food Groove</h4>
+            <p class="foods-gallery-items__description">We offer the following services</p>
+            <a href="#" class="foods-gallery-items__button">Discover Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+          <div class="foods-gallery-items">
+            <img src="./assets/Veggie Food Groove.jpg" alt="Veggie Food Groove">
+          </div>
+          <div class="foods-gallery-items foods-box">
+            <h4 class="foods-gallery-items__heading">That Comes Close</h4>
+            <p class="foods-gallery-items__description">We offer the following services</p>
+            <a href="#" class="foods-gallery-items__button">Discover Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+          <div class="foods-gallery-items">
+            <img src="./assets/That Comes Close.jpg" alt="That Comes Close">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Most Popular Product Section -->
+  <section class="product">
+    <div class="container">
+      <div class="product-wrap">
+        <h6 class="product__sub-heading">Our Product</h6>
+        <h2 class="product__heading">Most Popular Product</h2>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="./assets/Product01.png" alt="Product" class="product-item__img">
+            <div class="product-item__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="product-item__heading">Summer Veganie</h4>
+            <div class="product-item-price">
+              <p class="product-item-price__actual">$25</p>
+              <p class="product-item-price__offer">$29</p>
+            </div>
+            <a href="#" class="product-item__button">Buy Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+          <div class="product-item">
+            <img src="./assets/Product02.png" alt="Product" class="product-item__img">
+            <div class="product-item__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="product-item__heading">Greanie Seafood</h4>
+            <div class="product-item-price">
+              <p class="product-item-price__actual">$25</p>
+              <p class="product-item-price__offer">$29</p>
+            </div>
+            <a href="#" class="product-item__button">Buy Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+          <div class="product-item">
+            <img src="./assets/Product03.png" alt="Product" class="product-item__img">
+            <div class="product-item__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="product-item__heading">Fresh Vegetable</h4>
+            <div class="product-item-price">
+              <p class="product-item-price__actual">$25</p>
+              <p class="product-item-price__offer">$29</p>
+            </div>
+            <a href="#" class="product-item__button">Buy Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+          <div class="product-item">
+            <img src="./assets/Product04.png" alt="Product" class="product-item__img">
+            <div class="product-item__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 class="product-item__heading">Fresh Meatyus</h4>
+            <div class="product-item-price">
+              <p class="product-item-price__actual">$25</p>
+              <p class="product-item-price__offer">$29</p>
+            </div>
+            <a href="#" class="product-item__button">Buy Now <i class="fa-solid fa-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-wrap">
+        <h2 class="cta__heading">Veggie Foods? Ingredients You Want To Try</h2>
+        <a href="#" class="btn cta__btn">Get Started <i class="fa-solid fa-right-long"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Part -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-info">
+          <a href="#">
+            <h2 class="logo__img">Foodies</h2>
+          </a>
+          <p class="footer-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor</p>
+          <div class="footer-info__social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-info-link">
+          <h4 class="footer-info-link__heading">About Us</h4>
+          <ul class="footer-info-list">
+            <li class="footer-info-list__items"><a href="#">About Us</a></li>
+            <li class="footer-info-list__items"><a href="#">Service Us</a></li>
+            <li class="footer-info-list__items"><a href="#">Contact</a></li>
+            <li class="footer-info-list__items"><a href="#">Company</a></li>
+          </ul>
+        </div>
+        <div class="footer-info-link">
+          <h4 class="footer-info-link__heading">Company</h4>
+          <ul class="footer-info-list">
+            <li class="footer-info-list__items"><a href="#">Partnership</a></li>
+            <li class="footer-info-list__items"><a href="#">Terms of Use</a></li>
+            <li class="footer-info-list__items"><a href="#">Privacy</a></li>
+            <li class="footer-info-list__items"><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-info-mail">
+          <h4 class="footer-info-mail__heading">Get in touch</h4>
+          <p class="footer-info-mail__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor</p>
+          <form action="" class="footer-form">
+            <div class="footer-form-wrap">
+              <input type="email" name="email" id="email" placeholder="Email">
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-copy-right">
+        <p class="footer-copy-right-text">Copyright © 2021 Foodies.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

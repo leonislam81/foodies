@@ -1,0 +1,131 @@
+.header {
+  padding: 2.625rem 0 1.25rem 0;
+  z-index: 10;
+  position: relative;
+
+  .header-wrap {
+    @extend %displayFlex;
+  }
+  .logo__img {
+    @include heading(2rem, 500);
+    color: $primary-color;
+  }
+  .nav-list--desktop {
+    @extend %displayFlex;
+    gap: 2.375rem;
+  }
+  .nav-list__items--desktop {
+    position: relative;
+  }
+  .nav-list__items--desktop a {
+    @include text($paragraph-text, 400, $heading-color);
+    transition: color 0.2s ease-out;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0.375rem;
+      height: 0.375rem;
+      background-color: $primary-color;
+      border-radius: 6.1875rem;
+      bottom: -0.625rem;
+      left: 0;
+      opacity: 0;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+    &:hover::before {
+      opacity: 1;
+      left: 50%;
+    }
+  }
+  .nav-list__items--desktop .active::before {
+    content: '';
+    position: absolute;
+    width: 0.375rem;
+    height: 0.375rem;
+    background-color: $primary-color;
+    border-radius: 6.1875rem;
+    bottom: -0.625rem;
+    left: 50%;
+    opacity: 1;
+  }
+  .clickable-dropdown {
+    cursor: pointer;
+  }
+  .fa-chevron-down {
+    font-size: 12px;
+    margin-left: 6px;
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  input[type='checkbox']:checked ~ .nav-dropdown-menu {
+    display: block;
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+    background-color: #f3fcf7;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  }
+  .nav-dropdown-menu__items a {
+    @include text($paragraph-text, 400, $heading-color);
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  .header-nav--mobile {
+    display: none;
+  }
+
+  //Media Query
+  @media all and (max-width: 769px) {
+    & {
+      padding: 1.25rem;
+    }
+    .header-nav--desktop {
+      display: none;
+    }
+    .header-nav--mobile {
+      display: block;
+    }
+    input[type='checkbox'] {
+      display: none;
+    }
+    .nav-list--mobile {
+      position: absolute;
+      width: 100%;
+      top: 5rem;
+      left: 0;
+      background-color: #fff;
+      text-align: center;
+      padding: 1.25rem 0;
+      display: none;
+      z-index: 99;
+    }
+    input[type='checkbox']:checked ~ .nav-list--mobile {
+      display: block;
+    }
+    .nav-list__items--mobile a {
+      @include text($paragraph-text, 400, $heading-color);
+      margin-bottom: 0.625rem;
+      display: inline-block;
+    }
+    .fa-bars {
+      font-size: 1.25rem;
+      color: $primary-color;
+      border: 2px solid $primary-color;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+  }
+}

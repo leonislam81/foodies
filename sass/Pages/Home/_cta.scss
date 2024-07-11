@@ -1,0 +1,39 @@
+.cta {
+  padding: 3.75rem 0;
+
+  .cta-wrap {
+    width: 100%;
+    min-height: 28.75rem;
+    background-image: url(../../../assets/CTA\ Bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta__heading {
+    @include heading($heading02, 600);
+    text-align: center;
+    color: #fff;
+    max-width: 50rem;
+    margin-bottom: 2.3125rem;
+  }
+
+  //Media Query
+  @media all and (max-width: 769px) {
+    & {
+      padding: 0 0 0 0;
+    }
+    .cta-wrap {
+      padding: 0 1.875rem;
+    }
+    .cta__heading {
+      font-size: 1.625rem;
+    }
+    .cta__btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
